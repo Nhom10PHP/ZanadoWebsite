@@ -2,6 +2,6 @@
 <?php 
 	session_start();
 	session_destroy();
-	header('Location: login.php');
+	header('Location: ../layout/trangchu.php');
 ?>
 <?php ob_flush();?>
