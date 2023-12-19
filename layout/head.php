@@ -71,6 +71,7 @@
                         <li class="hidden-xs hidden-sm"><a href="lienhe.php">Liên hệ</a></li>
                         <li class="hidden-xs"><a href="bando.php"><i class="ti-map-alt"></i></a></li>
                         <li><a href="gioithieu.php">Giới thiệu</a></li>
+                        <li><a href="../admincp/login.php">Đăng nhập</a></li>
 
                     </ul>
                 </div>
