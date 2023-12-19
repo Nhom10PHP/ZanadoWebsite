@@ -1,0 +1,23 @@
+body{
+    background-image: linear-gradient( 45deg, rgb(65, 88, 208) 0%, 
+    rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+    height: 100vh;
+    overflow: hidden;
+}
+
+.warpper{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.warpper form{
+    border: 1px black solid;
+}
+
+@media screen and (min-width :600px){
+    .warpper{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

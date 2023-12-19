@@ -1,0 +1,940 @@
+* {
+    font-family: "Architecture", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 17px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+header .top-header .menu .logo {
+    width: 75px;
+    height: 56px;
+}
+
+.Banner {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    width: 100%;
+    height: 210px;
+    background-color: #17a2b8/*639b33*/
+    /*#9ACD32*/
+    ;
+}
+
+.bottom-banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -170px;
+    justify-content: space-around;
+}
+
+.bottom-banner .flash-news {
+    width: 46%;
+    height: 303px;
+    border: 1px solid black;
+    background-image: url('../asset/images/section_hot.webp');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 55px 25px 0px 25px;
+    animation: chaytrai 1.5s forwards;
+    margin-bottom: 30px;
+}
+
+.bottom-banner .flash-news button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.bottom-banner .flash-news button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #89d374;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.bottom-banner .flash-news button:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+.bottom-banner .flash-news button:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.bottom-banner .flash-shop {
+    width: 46%;
+    height: 303px;
+    border: 1px solid black;
+    background-image: url('../asset/images/section3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 55px 25px 0px 25px;
+    animation: chayphai 1.5s forwards;
+    margin-bottom: 30px;
+}
+
+.bottom-banner .flash-shop button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.bottom-banner .flash-shop button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #89d374;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.bottom-banner .flash-shop button:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+.bottom-banner .flash-shop button:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+@keyframes chaytrai {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes chayphai {
+    from {
+        opacity: 0;
+        margin-right: -500px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+article .list-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+article .list-product .product .infor button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+}
+
+article .list-product .product .infor button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #89d374;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+article .list-product .product .infor button:hover {
+    cursor: pointer;
+}
+
+article .list-product .product .infor button:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+article .list-product .product {
+    animation: len 2s forwards;
+    margin-bottom: 60px;
+}
+
+
+/*@keyframes len{
+from{
+    opacity: 0;
+    margin-bottom: -500px;
+}
+to{
+    opacity: 1;
+}
+}*/
+
+article .list-product .product .infor .name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+article .list-product .product .infor button {
+    font-size: 15px;
+}
+
+article .list-product .product .image img {
+    border-radius: 50%;
+}
+
+article .list-product .product .image {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 100%;
+}
+
+article .list-product .product .image:hover img {
+    transform: scale(1.3);
+    transition: 1.5s;
+}
+
+.blog .list-news .news {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog .list-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog .picture {
+    position: relative;
+}
+
+.blog .date {
+    width: 100px;
+    background-color: #639b33;
+    padding: 5px 0;
+    position: absolute;
+    top: 20px;
+}
+
+article .blog .name-news:hover {
+    color: #639b33;
+    cursor: pointer;
+}
+
+.blog span {
+    position: relative;
+    color: black;
+}
+
+.blog span::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #9ACD32;
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog span:hover {
+    color: #9ACD32;
+}
+
+.blog span:hover::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.bottom-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-content .contact {
+    background-color: #b5dd71;
+}
+
+.bottom-content .contact div {
+    position: relative;
+}
+
+.bottom-content .contact input {
+    width: 100%;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #ccc/*#b5dd71*/
+    ;
+    padding: 0.35em 0.45em;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bottom-content .contact input:focus {
+    outline: none;
+}
+
+.bottom-content .contact input::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.bottom-content .contact span {
+    position: absolute;
+    background-color: hsl(236, 32%, 26%);
+    transition: transform 0.5s ease;
+}
+
+.bottom-content .contact .bottom,
+.top {
+    height: 1px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+}
+
+.bottom-content .contact .left,
+.right {
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    transform: scaleY(0);
+}
+
+.bottom-content .contact .bottom {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.bottom-content .contact input:focus~.bottom {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.bottom-content .contact .right {
+    right: 0;
+    transform-origin: top right;
+}
+
+.bottom-content .contact input:focus~.right {
+    transform-origin: bottom right;
+    transform: scaleY(1);
+}
+
+.bottom-content .contact .top {
+    top: 0;
+    transform-origin: top left;
+}
+
+.bottom-content .contact input:focus~.top {
+    transform-origin: top right;
+    transform: scaleX(1);
+}
+
+.bottom-content .contact .left {
+    left: 0;
+    transform-origin: bottom left;
+}
+
+.bottom-content .contact input:focus~.left {
+    transform-origin: top left;
+    transform: scaleY(1);
+}
+
+.bottom-content .contact div {
+    position: relative;
+}
+
+.bottom-content .contact textarea {
+    width: 6.5em;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #b5dd71;
+    padding: 0.35em 0.45em;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bottom-content .contact textarea:focus {
+    outline: none;
+}
+
+.bottom-content .contact textarea::placeholder {
+    color: white;
+}
+
+.bottom-content .contact span {
+    position: absolute;
+    background-color: blue;
+    transition: transform 0.5s ease;
+}
+
+.bottom-content .contact .bottom,
+.top {
+    height: 1px;
+    left: 0;
+    transform: scaleX(0);
+}
+
+.bottom-content .contact .left,
+.right {
+    width: 1px;
+    top: 0;
+    bottom: 0;
+}
+
+.bottom-content .contact .bottom {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.bottom-content .contact textarea:focus~.bottom {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.bottom-content .contact .right {
+    right: 0;
+    transform-origin: top right;
+}
+
+.bottom-content .contact textarea:focus~.right {
+    transform-origin: bottom right;
+    transform: scaleY(1);
+}
+
+.bottom-content .contact .top {
+    top: 0;
+    transform-origin: top left;
+}
+
+.bottom-content .contact textarea:focus~.top {
+    transform-origin: top right;
+    transform: scaleX(1);
+}
+
+.bottom-content .contact .left {
+    left: 0;
+    transform-origin: bottom left;
+}
+
+.bottom-content .contact textarea:focus~.left {
+    transform-origin: top left;
+    transform: scaleY(1);
+}
+
+.bottom-content .contact button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: #b5dd71;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.bottom-content .contact button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #b5dd71;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+    color: white;
+}
+
+.bottom-content .contact button:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.bottom-content .contact button:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+
+/* Giang begin   */
+
+
+/* Detail-buy*/
+
+.header-bottom {
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+}
+
+.header-bottom .menu-header-bottom {
+    list-style-type: none;
+    display: flex;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.header-bottom .menu-header-bottom li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-bottom .menu-header-bottom li {
+    font-weight: 100;
+}
+
+.list-news .content button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+}
+
+.list-news .content button:hover {
+    cursor: pointer;
+    color: #161616;
+    background-color: #17a2b8;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.full-col {
+    width: 100%;
+}
+
+.half-col {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sec-content-heading {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/*function demo*/
+
+.flash-shop button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.flash-news button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bigimg-demo {
+   
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.sec-slogan {
+    font-style: italic;
+}
+
+.contact-form {
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.contact-infor {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form-personal {
+    font-size: 15px;
+    width: 50%;
+}
+
+.form-cotrol {
+    border: 1px solid red !important;
+    padding: 10px;
+    width: 70%;
+    /* display: inline-block; */
+}
+
+.rs-seach {
+    background-color: #fff !important;
+    width: 100px;
+    height: 50px;
+    z-index: 2;
+}
+
+.pull-right {
+    border: 1px solid #000;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.pull-right-dangnhap {
+    border: 1px solid #000;
+    font-weight: 700;
+    margin-top: 30px;
+    background-color: #17a2b8 !important;
+    height: 38px;
+    width: 180px;
+    line-height: 38px;
+}
+
+.pull-right-dangnhap:hover {
+    cursor: pointer;
+    background-color: aqua !important;
+}
+
+.bottom-content .contact-form .contact-form-personal .pull-right:hover {
+    cursor: pointer;
+    background-color: #639b33 !important;
+    color: #000;
+}
+
+.bottom-content .contact {
+    background-color: #17a2b8 !important;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    margin-top: 10px;
+    border: 10px solid #17a2b8;
+}
+
+.footer-infor {
+    margin: 0 auto;
+    padding: 28px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-infor ul {
+    max-width: 300px;
+    list-style: none;
+    color: #ccc;
+}
+
+.footer-infor li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-infor li p {
+    font-size: 12px;
+    padding: 12px 0;
+}
+
+.fab {
+    color: #ccc;
+    padding: 0 12px;
+}
+
+.footer-infor input {
+    padding: 10px;
+    width: 100%;
+    margin: 12px 0;
+    background-color: black;
+    color: white;
+}
+
+.list-product .product .infor button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.detail-buy {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+}
+
+.detail-buy .img-detail-buy {
+    width: 400px;
+}
+
+.detail-buy .content-detail-buy {
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.detail-buy .content-detail-buy .name-product {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.detail-buy .content-detail-buy .group-status {
+    flex-wrap: wrap;
+}
+
+.content-detail-buy .group-status .status1>a {
+    text-decoration: none;
+    width: 300px;
+    text-align: center !important;
+}
+
+.content-detail-buy .group-status .status1 {
+    margin-right: 5%;
+}
+
+.content-detail-buy .group-status .status2 {
+    margin-left: 5%;
+}
+
+.content-detail-buy .group-status .status2>a {
+    text-decoration: none;
+    width: 300px;
+    text-align: center !important;
+}
+
+.detail-price {
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    line-height: 30px;
+    width: 150px;
+    margin-left: 40%;
+}
+
+.size {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    margin-left: 13%;
+    margin-top: 20px;
+}
+
+.size .detail-size {
+    display: flex;
+}
+
+.size .detail-size>p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.color {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    margin-left: 13%;
+    margin-top: 20px;
+}
+
+.color .detail-color {
+    display: flex;
+}
+
+.color .detail-color>p {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.quality {
+    display: flex;
+    margin-left: 13%;
+    margin-top: 20px;
+}
+
+.quality .detail-quality {
+    margin-left: 10%;
+}
+
+.quality .detail-quality>input {
+    margin-bottom: 10px;
+}
+
+.chiem {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.AddCart {
+    margin-top: 20px;
+}
+
+.AddCart .AddCart-New {
+    color: #fff;
+    border: 1px solid #ccc;
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #17a2b8;
+}
+
+.AddCart .AddCart-New:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.comment {
+    background-color: #f8f8f8;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment .detail-comment {
+    width: 700px;
+}
+
+.comment .product-near {
+    width: 400px;
+    text-align: center;
+}
+
+.tintuc {
+    margin-top: 50px;
+    background-color: #999;
+}
+
+.tintuc .detail-tintuc {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.detail-tintuc .img-detail-tintuc {
+    width: 30%;
+}
+
+.detail-tintuc .img-detail-tintuc>img {
+    width: 100%;
+    height: auto;
+}
+
+.detail-tintuc .descri-detail-tintuc {
+    margin-left: 10px;
+    width: 70%;
+    text-align: left;
+}
+
+
+/* Trang thông tin về chúng tôi */
+
+.list-infor {
+    background-color: #17a2b8;
+}
+
+
+/*finish of Giang */
+
+.bgimg1 {
+    background-image: url("../asset/images/TheSale.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover;*/
+    opacity: 0.5;
+}
+
+@media only screen and (max-device-width: 1600px) {
+    .bgimg1 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
